@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="540.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kpmelnikov.HelloController">
+    <VBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="343.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#saveBlockScheme" text="Сохранить" />
+         <Button mnemonicParsing="false" onAction="#openFile" prefHeight="36.0" prefWidth="63.0" text="Открыть" />
+      </children></VBox>
+   <ScrollPane fx:id="paneScroll" centerShape="false" layoutX="500.0" layoutY="63.0" pickOnBounds="false" prefHeight="454.0" prefWidth="407.0">
+      <content>
+         <Pane fx:id="mainPane" focusTraversable="true" />
+      </content></ScrollPane>
+   <TextArea fx:id="textArea" layoutX="43.0" layoutY="63.0" prefHeight="454.0" prefWidth="343.0" />
+   <Button layoutX="420.0" layoutY="270.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="40.0" prefWidth="57.0" text="Старт" />
+</Pane>
